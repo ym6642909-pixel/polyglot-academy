@@ -1,0 +1,11 @@
+{
+  "name": "Polyglot Academy Pro",
+  "short_name": "Polyglot Pro",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#111a31",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": []
+}
