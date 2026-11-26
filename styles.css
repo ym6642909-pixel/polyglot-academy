@@ -95,3 +95,14 @@ body.dark .md-table th,body.dark .md-table td{border-color:#2a3a5e}
 body.dark .user-mini{background:#353a7a;color:#cfcaff}
 body.dark .card-foot button,body.dark .metric b{color:#a99fff}
 body.dark footer{color:#5f6c8f}
+.wotd-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.wotd-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:14px;box-shadow:var(--shadow);cursor:pointer;display:grid;gap:6px}
+.wotd-card:hover{border-color:#d9d2ff}
+.wotd-card b{font:700 17px 'DM Sans';direction:auto;text-align:right}
+.wotd-card small{color:var(--muted);font-size:10px}
+.write-area{resize:vertical;min-height:110px;line-height:1.9}
+@media(max-width:1100px){.wotd-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.wotd-grid{grid-template-columns:repeat(2,1fr);gap:8px}.wotd-card{padding:11px 10px}}
+body.dark .wotd-card{background:#16203a;border-color:#263350;box-shadow:0 12px 35px #00000030}
+body.dark .wotd-card:hover{border-color:#3a3f7d}
+body.dark .write-area{background:#101a30;border-color:#2a3a5e;color:#e7ebf6}
