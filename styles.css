@@ -54,3 +54,44 @@ footer{font-size:8px}
 .story-line.open .story-ar{display:block}
 .story .lesson-num{width:auto;padding:0 9px;font-size:10px}
 @media(max-width:700px){.story-line p{font-size:12px}}
+
+/* Round 6: role-play cards + dark mode */
+.rp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:4px}
+.rp-card{position:relative;border:1px solid var(--line);background:#fff;border-radius:13px;padding:14px 11px;cursor:pointer;text-align:center;font-family:Cairo}
+.rp-card:hover{border-color:#d9d2ff;background:#f8f7ff}
+.rp-icon{font-size:24px;display:block;margin-bottom:6px}
+.rp-card b{display:block;font-size:11px;margin-bottom:3px}
+.rp-card small{display:block;font-size:9px;color:var(--muted);line-height:1.6}
+.rp-done{position:absolute;top:7px;left:8px;font-size:8px;font-weight:700;color:var(--green);background:#e8f8f1;padding:3px 7px;border-radius:12px}
+@media(max-width:700px){.rp-grid{grid-template-columns:repeat(2,1fr);gap:8px}.rp-card{padding:11px 8px}}
+:root{--chart-bar:#c9c4f2;--chart-today:#7668e8;--chart-num:#514a9e;--chart-num0:#c3c9d6;--chart-day:#8994a8;--chart-line:#e8ecf3}
+body.dark{--bg:#0e1526;--ink:#e7ebf6;--muted:#93a0c0;--line:#263350;--chart-bar:#3d3670;--chart-today:#8f84f5;--chart-num:#c9c4f2;--chart-num0:#5a6480;--chart-day:#93a0c0;--chart-line:#2a3a5e}
+body.dark .stat,body.dark .panel,body.dark .language-card,body.dark .lesson-card,body.dark .metric,body.dark .lesson,body.dark .badge,body.dark .story-line,body.dark .quiz-box,body.dark .tutor-box,body.dark .level,body.dark .tab,body.dark .answer,body.dark .icon-btn,body.dark .menu,body.dark .rp-card{background:#16203a;border-color:#263350;box-shadow:0 12px 35px #00000030}
+body.dark .rp-card:hover{background:#1c2547;border-color:#3a3f7d}
+body.dark .bubble.ai{background:#1b2745;border-color:#2a3a5e;color:#e7ebf6}
+body.dark .bubble.user{background:#353a7a;color:#e6e4ff}
+body.dark .chat-log{background:#101a30}
+body.dark .chat-input input,body.dark .field{background:#101a30;border-color:#2a3a5e;color:#e7ebf6}
+body.dark .tab.active{background:#6c61d5}
+body.dark .btn.ghost{background:#1b2745;border-color:#3a3f7d;color:#a99fff}
+body.dark .track{background:#22304f}
+body.dark .level.active{background:#1c2547;border-color:var(--purple)}
+body.dark .level b{color:#a99fff}
+body.dark .lesson-num,body.dark .tag,body.dark .stat-icon,body.dark .task-icon{background:#232c52;color:#a99fff}
+body.dark .quote{background:#1c2440;color:#b9b3f2}
+body.dark .note{background:#2b2416;border-color:#4a3d1f;color:#d8b96a}
+body.dark .answer.correct{background:#123527;border-color:#25ac7a}
+body.dark .answer.wrong{background:#3a1d1d;border-color:#db7474}
+body.dark .badge.on{background:linear-gradient(160deg,#1b2547,#1a2140);border-color:#3a3f7d}
+body.dark .badge-state{background:#123527}
+body.dark .badge-state.locked{background:#1c2540}
+body.dark .rp-done{background:#123527}
+body.dark .story-line.open{background:#1c2547;border-color:#3a3f7d}
+body.dark .story-line p{color:#b9b3f2}
+body.dark .grammar{background:#1a2140;border-color:#3a3f7d}
+body.dark .bubble code,body.dark .md-table th{background:#232c52}
+body.dark .md-table th{color:#b9b3f2}
+body.dark .md-table th,body.dark .md-table td{border-color:#2a3a5e}
+body.dark .user-mini{background:#353a7a;color:#cfcaff}
+body.dark .card-foot button,body.dark .metric b{color:#a99fff}
+body.dark footer{color:#5f6c8f}
