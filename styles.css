@@ -43,3 +43,14 @@ footer{font-size:8px}
 .badge-state.locked{color:var(--muted);background:#f1f3f8}
 @media(max-width:1100px){.badge-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.badge-grid{grid-template-columns:repeat(2,1fr);gap:8px}.badge{padding:12px 8px}.badge small{min-height:36px}}
+
+/* Round 5: speaking + stories + chart */
+.btn.rec{background:#d64b4b;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.65}}
+.story-line{border:1px solid var(--line);border-radius:11px;padding:10px 13px;margin:8px 0;cursor:pointer;background:#fff}
+.story-line p{margin:0;font-size:13px;color:#4a41a8}
+.story-line .story-ar{display:none;font-size:11px;color:var(--muted);margin-top:5px;line-height:1.8}
+.story-line.open{background:#f8f7ff;border-color:#ddd6ff}
+.story-line.open .story-ar{display:block}
+.story .lesson-num{width:auto;padding:0 9px;font-size:10px}
+@media(max-width:700px){.story-line p{font-size:12px}}
