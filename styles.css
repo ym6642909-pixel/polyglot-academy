@@ -5,3 +5,28 @@
 @media(max-width:700px){.sidebar{transform:translateX(105%);transition:.25s;width:260px}.sidebar.open{transform:none}.main{margin:0;width:100%;padding:0 14px 18px}.topbar{height:82px;gap:9px}.menu{display:block}.topbar>div:nth-child(2){margin-left:auto}.topbar h2{font-size:17px}.top-actions{gap:6px}.icon-btn{padding:8px}.hero{padding:22px 18px;min-height:170px}.hero h1{font-size:19px}.hero-art{font-size:49px;margin:0}.hero p{max-width:230px}.stats{gap:8px}.stat{padding:10px;gap:7px}.stat-icon{width:31px;height:31px;font-size:14px}.stat b{font-size:15px}.stat small{font-size:8px}.language-grid{gap:8px}.language-card{padding:12px}.course-grid{grid-template-columns:1fr}.level-grid{grid-template-columns:repeat(2,1fr)}.quiz-box,.tutor-box{padding:15px}.question{font-size:18px}.metric-grid{grid-template-columns:1fr 1fr}}
 
 .bubble p{margin:0 0 6px}.bubble p:last-child{margin:0}.bubble ul,.bubble ol{margin:4px 0 6px;padding-right:20px}.bubble li{margin:2px 0}.bubble hr{border:0;border-top:1px solid var(--line);margin:8px 0}.bubble h4,.grammar h4{margin:6px 0;font-size:13px;color:var(--purple)}.bubble code{background:#f1efff;padding:1px 5px;border-radius:5px;font-family:'DM Sans',monospace}.tbl-wrap{overflow-x:auto;margin:8px 0}.md-table{border-collapse:collapse;width:100%;font-size:11px}.md-table th,.md-table td{border:1px solid var(--line);padding:7px 10px;text-align:right}.md-table th{background:#f1efff;color:#4a41a8}.grammar{margin-top:16px;background:#fbfaff;border:1px solid #e5e1ff;border-radius:14px;padding:14px 16px}.grammar p{font-size:11px;line-height:2;margin:4px 0 8px}.icon-btn.sm{padding:2px 7px;font-size:10px;border-radius:8px}
+
+/* Round 3: mobile polish */
+@media(max-width:700px){
+.user-mini{display:none}
+.topbar{padding:0 2px}
+.chat-log{height:min(400px,52vh)}
+.bubble{max-width:94%;font-size:12px}
+.chat-input input{padding:10px;font-size:12px}
+.chat-input .btn{padding:10px 13px}
+.flashcard{padding:30px 14px;min-height:180px}
+.flashcard strong{font-size:clamp(20px,6.5vw,30px);overflow-wrap:anywhere}
+.lesson{flex-wrap:wrap;row-gap:7px}
+.lesson button{margin-right:auto}
+.section-head h3{font-size:14px}
+.quote{font-size:12px}
+.tutor-box,.quiz-box{padding:13px}
+.question{font-size:16px}
+.foreign{font-size:15px}
+.metric-grid{gap:8px}
+.hero-art{display:none}
+.hero p{max-width:none}
+footer{font-size:8px}
+.md-table{font-size:10px}
+.md-table th,.md-table td{padding:5px 7px}
+}
