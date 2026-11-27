@@ -119,4 +119,5 @@ body.dark .abc-letter{color:#c9c4f5}
 
 /* Round 10: pinyin line under Chinese text */
 .py{display:block;font-size:12px;line-height:1.7;color:var(--muted);direction:ltr;font-family:'DM Sans',Cairo;letter-spacing:.2px}
+.ar-pron{direction:rtl;font-family:Cairo,'DM Sans',sans-serif;font-size:14px;letter-spacing:0}
 body.dark .py{color:#93a0c0}
