@@ -13,7 +13,7 @@ mem[l]=caches.open(CN).then(function(c){return c.match(url(l))}).then(function(r
 return mem[l]}
 function clip(l,t){return load(l).then(function(p){if(!p)return null;var e=p.i[hash(String(t).trim())];if(!e)return null;return new Blob([new Uint8Array(p.b,p.o+e[0],e[1])],{type:"audio/mpeg"})})}
 function stop(){try{speechSynthesis.cancel()}catch(e){}if(audio){try{audio.pause()}catch(e){}audio=null}}
-function play(blob,rate,done){var u=URL.createObjectURL(blob),a=new Audio(u);audio=a;a.playbackRate=rate>=.9?1:.75;a.onended=function(){URL.revokeObjectURL(u);if(done)done()};a.onerror=function(){URL.revokeObjectURL(u);if(done)done()};var p=a.play();if(p&&p.catch)p.catch(function(){})}
+function play(blob,rate,done){var u=URL.createObjectURL(blob),a=new Audio(u);audio=a;a.playbackRate=Math.max(.4,Math.min(1.5,rate||1));a.onended=function(){URL.revokeObjectURL(u);if(done)done()};a.onerror=function(){URL.revokeObjectURL(u);if(done)done()};var p=a.play();if(p&&p.catch)p.catch(function(){})}
 var origSpeak=window.speak,origStory=window.speakStory;
 if(origSpeak)window.speak=function(t,id,r){if(SZ[id]&&isInst(id)){var rate=r||(window.getRate?getRate():1);clip(id,t).then(function(b){if(b){stop();play(b,rate)}else origSpeak(t,id,r)});return}origSpeak(t,id,r)};
 if(origStory)window.speakStory=function(i,slow){var id=window.storyLang,st=window.STORIES&&STORIES[id]&&STORIES[id][i];if(!(st&&SZ[id]&&isInst(id)))return origStory(i,slow);
